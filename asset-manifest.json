@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/pf-car-rental/static/css/main.17fb153a.css",
+    "main.js": "/pf-car-rental/static/js/main.af4c2a54.js",
+    "static/js/131.09c658db.chunk.js": "/pf-car-rental/static/js/131.09c658db.chunk.js",
+    "static/js/144.2f9de016.chunk.js": "/pf-car-rental/static/js/144.2f9de016.chunk.js",
+    "static/js/764.a1da005c.chunk.js": "/pf-car-rental/static/js/764.a1da005c.chunk.js",
+    "static/js/426.801850f4.chunk.js": "/pf-car-rental/static/js/426.801850f4.chunk.js",
+    "static/media/volvo1.jpg": "/pf-car-rental/static/media/volvo1.ec57415f16f4b4d27c35.jpg",
+    "static/media/lincoln1.jpg": "/pf-car-rental/static/media/lincoln1.44807d130e5261dfaa8e.jpg",
+    "static/media/infinity1.jpg": "/pf-car-rental/static/media/infinity1.164f30e12dc653b56582.jpg",
+    "static/media/pegot1.jpg": "/pf-car-rental/static/media/pegot1.a0eccd29b8000e0f680a.jpg",
+    "static/media/jaguar1.jpg": "/pf-car-rental/static/media/jaguar1.e2f3f9311c559811a4c1.jpg",
+    "static/media/audi2.jpg": "/pf-car-rental/static/media/audi2.dfcedd8640f64da13c12.jpg",
+    "static/media/car-rental.png": "/pf-car-rental/static/media/car-rental.49220822fe2b56e08d40.png",
+    "index.html": "/pf-car-rental/index.html",
+    "main.17fb153a.css.map": "/pf-car-rental/static/css/main.17fb153a.css.map",
+    "main.af4c2a54.js.map": "/pf-car-rental/static/js/main.af4c2a54.js.map",
+    "131.09c658db.chunk.js.map": "/pf-car-rental/static/js/131.09c658db.chunk.js.map",
+    "144.2f9de016.chunk.js.map": "/pf-car-rental/static/js/144.2f9de016.chunk.js.map",
+    "764.a1da005c.chunk.js.map": "/pf-car-rental/static/js/764.a1da005c.chunk.js.map",
+    "426.801850f4.chunk.js.map": "/pf-car-rental/static/js/426.801850f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17fb153a.css",
+    "static/js/main.af4c2a54.js"
+  ]
+}
