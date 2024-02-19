@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={<Loading />} persistor={persistor}>
-        <BrowserRouter basename="/pf-car-rental-test">
+        <BrowserRouter basename="/pf-car-rental">
           <App />
         </BrowserRouter>
       </PersistGate>
