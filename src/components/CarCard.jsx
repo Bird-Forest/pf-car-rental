@@ -19,7 +19,7 @@ export default function CarCard({ item }) {
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
 
-  const openModal = evt => {
+  const openModal = () => {
     setShowModal(true);
   };
 
@@ -32,7 +32,7 @@ export default function CarCard({ item }) {
       dispatch(deleteFavorite(idCar));
     }
   };
-  // let address = item.address.split(',');
+  let address = item.address.split(',');
 
   return (
     <WrapCarCard id={item.id}>
@@ -52,14 +52,14 @@ export default function CarCard({ item }) {
       </WrapTitleCard>
       <WrapTextCard>
         <TextCard>
-          {/* <p className="text border">{address[1]}</p>
-          <p className="text border">{address[2]}</p> */}
+          <p className="text border">{address[1]}</p>
+          <p className="text border">{address[2]}</p>
           <p className="text last">{item.rentalCompany}</p>
         </TextCard>
         <TextCard>
-          <p className="text border last">{item.type}</p>
+          <p className="text border">{item.type}</p>
           <p className="text border">{item.id}</p>
-          {/* <p className="text last">{item.accessories[0]}</p> */}
+          <p className="text last">{item.accessories[0]}</p>
         </TextCard>
       </WrapTextCard>
       <BtnCard type="button" id={item.id} onClick={openModal}>

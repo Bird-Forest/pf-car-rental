@@ -15,25 +15,6 @@ import {
 import { IoCloseSharp } from 'react-icons/io5';
 
 export default function CarPopUp({ item, onClose }) {
-  // const listRef = useRef(null);
-  //  const handleClose = event => {
-  //    if (listRef.current && !listRef.current.contains(event.target)) {
-  //      onClose(false);
-  //    }
-  // };
-  // document.addEventListener('mousedown', handleClose);
-  // return () => {
-  //   window.removeEventListener('keydown', handleKeyDown);
-  //   document.addEventListener('mousedown', handleClose);
-  // };
-
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-
   useEffect(() => {
     const handleEscape = event => {
       if (event.key === 'Escape') {
@@ -41,9 +22,11 @@ export default function CarPopUp({ item, onClose }) {
       }
     };
     window.addEventListener('keydown', handleEscape);
+    document.body.style.overflow = 'hidden';
 
     return () => {
       window.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'auto';
     };
   }, [onClose]);
 
@@ -52,8 +35,8 @@ export default function CarPopUp({ item, onClose }) {
   let age = driver[0].split(':');
 
   return (
-    <Backdrop name="close">
-      <WrapPopUp id={item.id}>
+    <Backdrop name="close" onClick={onClose}>
+      <WrapPopUp id={item.id} onClick={e => e.stopPropagation()}>
         <BtnClose type="button" id={item.id} onClick={onClose}>
           <IoCloseSharp className="close" />
         </BtnClose>

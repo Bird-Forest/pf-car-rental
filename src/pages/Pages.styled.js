@@ -55,7 +55,7 @@ export const WrapFilterCatalog = styled.div`
 export const WrapNotFound = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 50px;
   max-width: 1184px;
@@ -63,23 +63,28 @@ export const WrapNotFound = styled.div`
   padding: 0;
 `;
 export const TitleNotFound = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 600px;
   height: 50px;
   font-family: 'Montserrat';
   font-size: 32px;
-  font-weight: 900;
+  font-weight: 700;
   color: rgb(52, 112, 255);
   text-align: center;
   padding: 0;
   margin: 0;
 `;
 export const WrapImg = styled.div`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 600px;
-  height: 800px;
+  height: 600px;
   background-image: url(${Car});
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
   padding: 0;
   margin: 0;
 `;

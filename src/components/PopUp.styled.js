@@ -3,19 +3,15 @@ import styled from 'styled-components';
 export const Backdrop = styled.div`
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  /* overflow-y: hidden; */
   backdrop-filter: blur(4px);
   background: rgba(18, 20, 23, 0.5);
 `;
-
 export const WrapPopUp = styled.div`
   position: relative;
   display: flex;
@@ -42,6 +38,8 @@ export const BtnClose = styled.button`
   width: 20px;
   height: 20px;
   background-color: #ffffff;
+  transition: all 0.3s;
+  cursor: pointer;
   padding: 0;
   .close {
     width: 20px;
@@ -178,8 +176,6 @@ export const WrapRent = styled.div`
     font-weight: 500;
     line-height: 1.43;
     text-align: left;
-    /* margin: 0;
-    padding: 0; */
   }
   .wrap-rent {
     display: flex;
@@ -230,6 +226,7 @@ export const BtnRent = styled.button`
   align-items: center;
   border-radius: 12px;
   padding: 12px 50px 12px 50px;
+  transition: all 0.3s;
   cursor: pointer;
   &:hover,
   :focus {
