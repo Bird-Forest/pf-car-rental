@@ -7,6 +7,7 @@ import { Container } from 'pages/Pages.styled';
 
 export default function App() {
   const error = useSelector(selectError);
+  console.log(error);
   return (
     <Container>
       <SharedLayout />

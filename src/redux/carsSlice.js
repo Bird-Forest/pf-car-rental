@@ -8,7 +8,10 @@ import {
 
 const initialState = {
   catalog: [],
+  cars: [],
   selectedCars: [],
+  page: 1,
+  status: 'idle',
   isLoading: false,
   error: null,
 };
@@ -25,15 +28,30 @@ const handleRejected = (state, action) => {
 const carsSlice = createSlice({
   name: 'cars',
   initialState,
+  reducers: {
+    addPage(state) {
+      state.page = state.page + 1;
+    },
+  },
+
   extraReducers: builder => {
     builder
       .addCase(fetchCatalog.pending, handlePending)
       .addCase(fetchCatalog.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.catalog = action.payload;
+
+        state.catalog = state.catalog.concat(action.payload);
       })
       .addCase(fetchCatalog.rejected, handleRejected)
+
+      // .addCase(fetchCars.pending, handlePending)
+      // .addCase(fetchCars.fulfilled, (state, action) => {
+      //   state.isLoading = false;
+      //   state.error = null;
+      //   state.cars = action.payload;
+      // })
+      // .addCase(fetchCars.rejected, handleRejected)
 
       .addCase(addFavorite.pending, handlePending)
       .addCase(addFavorite.fulfilled, (state, action) => {
@@ -72,3 +90,4 @@ const carsSlice = createSlice({
 });
 
 export const catalogReducer = carsSlice.reducer;
+export const { addPage } = carsSlice.actions;

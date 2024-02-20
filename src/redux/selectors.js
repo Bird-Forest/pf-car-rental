@@ -4,9 +4,13 @@ export const selectLoading = state => state.cars.loading;
 
 export const selectError = state => state.cars.error;
 
+export const selectStatus = state => state.cars.status;
+
 export const selectFavorites = state => state.cars.selectedCars;
 
 export const selectCatalog = state => state.cars.catalog;
+
+export const selectPage = state => state.cars.page;
 
 export const selectFilter = state => state.filter.filterCars;
 

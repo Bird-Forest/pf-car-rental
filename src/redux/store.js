@@ -16,7 +16,7 @@ import {
 const carsPersistConfig = {
   key: 'cars',
   storage,
-  whitelist: ['catalog'],
+  whitelist: [],
 };
 
 const rootReducer = combineReducers({

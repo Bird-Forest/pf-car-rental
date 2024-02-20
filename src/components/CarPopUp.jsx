@@ -15,6 +15,25 @@ import {
 import { IoCloseSharp } from 'react-icons/io5';
 
 export default function CarPopUp({ item, onClose }) {
+  // const listRef = useRef(null);
+  //  const handleClose = event => {
+  //    if (listRef.current && !listRef.current.contains(event.target)) {
+  //      onClose(false);
+  //    }
+  // };
+  // document.addEventListener('mousedown', handleClose);
+  // return () => {
+  //   window.removeEventListener('keydown', handleKeyDown);
+  //   document.addEventListener('mousedown', handleClose);
+  // };
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   useEffect(() => {
     const handleEscape = event => {
       if (event.key === 'Escape') {

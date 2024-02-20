@@ -7,13 +7,28 @@ export const fetchCatalog = createAsyncThunk(
   'cars/fetchAll',
   async (page, thunkAPI) => {
     try {
-      const response = await axios.get(`/cars?page=${page}&limit=12`);
+      const response = await axios.get(`/cars?page=${page}&limit=8`);
+      console.log(response.data);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
+
+// export const fetchCars = createAsyncThunk(
+//   'cars/fetchCars',
+//   async (page, thunkAPI) => {
+//     try {
+//       console.log(page);
+//       const response = await axios.get(`/cars?page=${page}&limit=8`);
+//       console.log(response.data);
+//       return response.data;
+//     } catch (error) {
+//       return thunkAPI.rejectWithValue(error.message);
+//     }
+//   }
+// );
 
 export const addFavorite = createAsyncThunk(
   'cars/addFavorite',
