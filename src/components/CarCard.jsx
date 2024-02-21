@@ -32,10 +32,8 @@ export default function CarCard({ item }) {
     // let newItem = catalog.find(item => item.id === idCar);
 
     if (!item.completed) {
-      // console.log(newItem.completed);
-      // console.log(newItem);
-      // let item = { ...newItem, completed: true };
-      // console.log(item);
+      console.log(item.completed);
+
       dispatch(addFavorite(idCar));
     } else {
       dispatch(deleteFavorite(idCar));
