@@ -36,8 +36,8 @@ export const BtnHeart = styled.button`
   .icon-heart {
     width: 18px;
     height: 18px;
-    /* fill: rgba(255, 255, 255, 0.8); */
-    fill: rgb(52, 112, 255);
+    fill: rgba(255, 255, 255, 0.9);
+    /* fill: rgb(52, 112, 255); */
   }
   .icon-heart-fill {
     width: 20px;

@@ -59,7 +59,7 @@ export const WrapNotFound = styled.div`
   align-items: center;
   gap: 50px;
   max-width: 1184px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0;
 `;
 export const TitleNotFound = styled.h1`
