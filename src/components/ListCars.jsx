@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect } from 'react';
 import { fetchCatalog } from '../redux/server';
 import { useDispatch } from 'react-redux';
 import {
@@ -26,14 +26,14 @@ export default function ListCars() {
   let perPage = 8;
   let totalPage = Math.ceil(totalCards / perPage);
 
-  const getCatalog = useMemo(() => fetchCatalog(1), []);
+  // const getCatalog = useMemo(() => fetchCatalog(1), []);
 
   useEffect(() => {
     if (status === 'idle') {
-      dispatch(getCatalog);
+      dispatch(fetchCatalog(1));
     }
     return () => {};
-  }, [status, dispatch, getCatalog]);
+  }, [status, dispatch]);
 
   const nextPage = () => {
     dispatch(addPage(page));

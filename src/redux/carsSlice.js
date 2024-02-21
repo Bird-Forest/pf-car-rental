@@ -31,6 +31,16 @@ const carsSlice = createSlice({
     addPage(state) {
       state.page = state.page + 1;
     },
+    // addFavorite(state, action) {
+    //   // state.selectedCars = action.payload;
+    //   state.selectedCars = [...state.selectedCars, action.payload];
+    //   // state.selectedCars = state.selectedCars.push(action.payload);
+    // },
+    // deleteFavorite(state, action) {
+    //   state.selectedCars = state.selectedCars.filter(
+    //     item => item.id !== action.payload
+    //   );
+    // },
   },
 
   extraReducers: builder => {
@@ -42,16 +52,8 @@ const carsSlice = createSlice({
 
         state.catalog = state.catalog.concat(action.payload);
       })
-      .addCase(fetchCatalog.rejected, handleRejected)
-
-      // .addCase(fetchCars.pending, handlePending)
-      // .addCase(fetchCars.fulfilled, (state, action) => {
-      //   state.isLoading = false;
-      //   state.error = null;
-      //   state.cars = action.payload;
-      // })
-      // .addCase(fetchCars.rejected, handleRejected)
-
+      .addCase(fetchCatalog.rejected, handleRejected);
+    builder
       .addCase(addFavorite.pending, handlePending)
       .addCase(addFavorite.fulfilled, (state, action) => {
         state.isLoading = false;
@@ -63,8 +65,9 @@ const carsSlice = createSlice({
           return item;
         });
       })
-      .addCase(addFavorite.rejected, handleRejected)
 
+      .addCase(addFavorite.rejected, handleRejected);
+    builder
       .addCase(deleteFavorite.pending, handlePending)
       .addCase(deleteFavorite.fulfilled, (state, action) => {
         state.isLoading = false;
@@ -76,8 +79,8 @@ const carsSlice = createSlice({
           return item;
         });
       })
-      .addCase(deleteFavorite.rejected, handleRejected)
-
+      .addCase(deleteFavorite.rejected, handleRejected);
+    builder
       .addCase(fetchFavorites.pending, handlePending)
       .addCase(fetchFavorites.fulfilled, (state, action) => {
         state.isLoading = false;

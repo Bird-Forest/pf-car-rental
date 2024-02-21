@@ -9,14 +9,14 @@ import { nanoid } from '@reduxjs/toolkit';
 import { Loading } from '../helper/Loading';
 import EmptyPage from 'helper/EmptyPage';
 
-export default function ListFavorites() {
+export default function ListFavorites({ item }) {
   const selectedCars = useSelector(selectFavorites);
   const isLoading = useSelector(selectLoading);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchFavorites());
-  }, [dispatch]);
+  }, [dispatch, item]);
 
   const Arr = Array.isArray(selectedCars) && selectedCars.length > 0;
   return (

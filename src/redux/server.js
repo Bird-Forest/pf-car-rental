@@ -16,20 +16,6 @@ export const fetchCatalog = createAsyncThunk(
   }
 );
 
-// export const fetchCars = createAsyncThunk(
-//   'cars/fetchCars',
-//   async (page, thunkAPI) => {
-//     try {
-//       console.log(page);
-//       const response = await axios.get(`/cars?page=${page}&limit=8`);
-//       console.log(response.data);
-//       return response.data;
-//     } catch (error) {
-//       return thunkAPI.rejectWithValue(error.message);
-//     }
-//   }
-// );
-
 export const addFavorite = createAsyncThunk(
   'cars/addFavorite',
   async (idCar, thunkAPI) => {
