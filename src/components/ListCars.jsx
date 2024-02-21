@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { fetchCatalog } from '../redux/server';
 import { useDispatch } from 'react-redux';
 import {
@@ -7,7 +7,7 @@ import {
   // selectError,
   selectLoading,
   selectPage,
-  selectStatus,
+  // selectStatus,
 } from '../redux/selectors';
 import CarCard from './CarCard';
 import { nanoid } from '@reduxjs/toolkit';
@@ -20,7 +20,7 @@ export default function ListCars() {
   const isLoading = useSelector(selectLoading);
   const catalog = useSelector(selectCatalog);
   // const error = useSelector(selectError);
-  const status = useSelector(selectStatus);
+  // const status = useSelector(selectStatus);
   const page = useSelector(selectPage);
   const totalCards = 36;
   let perPage = 8;
@@ -28,12 +28,12 @@ export default function ListCars() {
 
   // const getCatalog = useMemo(() => fetchCatalog(1), []);
 
-  useEffect(() => {
-    if (status === 'idle') {
-      dispatch(fetchCatalog(1));
-    }
-    return () => {};
-  }, [status, dispatch]);
+  // useEffect(() => {
+  //   if (status === 'idle') {
+  //     dispatch(getCatalog);
+  //   }
+  //   // return () => {};
+  // }, [status, dispatch, getCatalog]);
 
   const nextPage = () => {
     dispatch(addPage(page));

@@ -1,15 +1,30 @@
-import { useSelector } from 'react-redux';
-import SharedLayout from './pages/SharedLayout';
-import React from 'react';
-import { selectError } from '../src/redux/selectors';
-import { Container } from 'pages/Pages.styled';
+import { useDispatch, useSelector } from 'react-redux';
+import React, { Suspense, useEffect, useMemo } from 'react';
+import { selectStatus } from './redux/selectors';
+import { Container } from './pages/Pages.styled';
+import { fetchCatalog } from './redux/server';
+import AppBar from './pages/AppBar';
+import CustomRoutes from './pages/CustomRoutes';
+import { Loading } from './helper/Loading';
 
 export default function App() {
-  const error = useSelector(selectError);
-  console.log(error);
+  const dispatch = useDispatch();
+  const status = useSelector(selectStatus);
+  const getCatalog = useMemo(() => fetchCatalog(1), []);
+
+  useEffect(() => {
+    if (status === 'idle') {
+      dispatch(getCatalog);
+    }
+    return () => {};
+  }, [status, dispatch, getCatalog]);
+
   return (
     <Container>
-      <SharedLayout />
+      <AppBar />
+      <Suspense fallback={<Loading />}>
+        <CustomRoutes />
+      </Suspense>
     </Container>
   );
 }
