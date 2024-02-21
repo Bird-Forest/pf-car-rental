@@ -22,11 +22,11 @@ export default function CarPopUp({ item, onClose }) {
       }
     };
     window.addEventListener('keydown', handleEscape);
-    document.body.style.overflow = 'hidden';
+    // document.body.style.overflow = 'hidden';
 
     return () => {
       window.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'auto';
+      // document.body.style.overflow = 'auto';
     };
   }, [onClose]);
 
@@ -35,8 +35,8 @@ export default function CarPopUp({ item, onClose }) {
   let age = driver[0].split(':');
 
   return (
-    <Backdrop name="close" onClick={onClose}>
-      <WrapPopUp id={item.id} onClick={e => e.stopPropagation()}>
+    <Backdrop name="close">
+      <WrapPopUp id={item.id}>
         <BtnClose type="button" id={item.id} onClick={onClose}>
           <IoCloseSharp className="close" />
         </BtnClose>

@@ -41,6 +41,16 @@ const carsSlice = createSlice({
     //     item => item.id !== action.payload
     //   );
     // },
+    // addFavorite(state, action) {
+    //   // state.selectedCars = action.payload;
+    //   state.selectedCars = [...state.selectedCars, action.payload];
+    //   // state.selectedCars = state.selectedCars.push(action.payload);
+    // },
+    // deleteFavorite(state, action) {
+    //   state.selectedCars = state.selectedCars.filter(
+    //     item => item.id !== action.payload
+    //   );
+    // },
   },
 
   extraReducers: builder => {
@@ -52,6 +62,7 @@ const carsSlice = createSlice({
         state.catalog = state.catalog.concat(action.payload);
       })
       .addCase(fetchCatalog.rejected, handleRejected);
+
     builder
       .addCase(addFavorite.pending, handlePending)
       .addCase(addFavorite.fulfilled, (state, action) => {
@@ -65,6 +76,7 @@ const carsSlice = createSlice({
         });
       })
       .addCase(addFavorite.rejected, handleRejected);
+
     builder
       .addCase(deleteFavorite.pending, handlePending)
       .addCase(deleteFavorite.fulfilled, (state, action) => {
@@ -81,6 +93,7 @@ const carsSlice = createSlice({
         );
       })
       .addCase(deleteFavorite.rejected, handleRejected);
+
     builder
       .addCase(fetchFavorites.pending, handlePending)
       .addCase(fetchFavorites.fulfilled, (state, action) => {
