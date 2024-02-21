@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/pf-car-rental/static/css/main.17fb153a.css",
-    "main.js": "/pf-car-rental/static/js/main.dc99bc48.js",
+    "main.js": "/pf-car-rental/static/js/main.bd0e989f.js",
     "static/js/131.96d79e88.chunk.js": "/pf-car-rental/static/js/131.96d79e88.chunk.js",
-    "static/js/821.aca9e0c6.chunk.js": "/pf-car-rental/static/js/821.aca9e0c6.chunk.js",
-    "static/js/416.ec082c52.chunk.js": "/pf-car-rental/static/js/416.ec082c52.chunk.js",
+    "static/js/821.4d17b912.chunk.js": "/pf-car-rental/static/js/821.4d17b912.chunk.js",
+    "static/js/416.4b045e6c.chunk.js": "/pf-car-rental/static/js/416.4b045e6c.chunk.js",
     "static/js/520.cafb02e9.chunk.js": "/pf-car-rental/static/js/520.cafb02e9.chunk.js",
     "static/js/426.801850f4.chunk.js": "/pf-car-rental/static/js/426.801850f4.chunk.js",
     "static/media/volvo1.jpg": "/pf-car-rental/static/media/volvo1.ec57415f16f4b4d27c35.jpg",
@@ -16,15 +16,15 @@
     "static/media/car-rental.png": "/pf-car-rental/static/media/car-rental.49220822fe2b56e08d40.png",
     "index.html": "/pf-car-rental/index.html",
     "main.17fb153a.css.map": "/pf-car-rental/static/css/main.17fb153a.css.map",
-    "main.dc99bc48.js.map": "/pf-car-rental/static/js/main.dc99bc48.js.map",
+    "main.bd0e989f.js.map": "/pf-car-rental/static/js/main.bd0e989f.js.map",
     "131.96d79e88.chunk.js.map": "/pf-car-rental/static/js/131.96d79e88.chunk.js.map",
-    "821.aca9e0c6.chunk.js.map": "/pf-car-rental/static/js/821.aca9e0c6.chunk.js.map",
-    "416.ec082c52.chunk.js.map": "/pf-car-rental/static/js/416.ec082c52.chunk.js.map",
+    "821.4d17b912.chunk.js.map": "/pf-car-rental/static/js/821.4d17b912.chunk.js.map",
+    "416.4b045e6c.chunk.js.map": "/pf-car-rental/static/js/416.4b045e6c.chunk.js.map",
     "520.cafb02e9.chunk.js.map": "/pf-car-rental/static/js/520.cafb02e9.chunk.js.map",
     "426.801850f4.chunk.js.map": "/pf-car-rental/static/js/426.801850f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17fb153a.css",
-    "static/js/main.dc99bc48.js"
+    "static/js/main.bd0e989f.js"
   ]
 }
