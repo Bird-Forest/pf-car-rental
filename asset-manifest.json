@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/pf-car-rental/static/css/main.17fb153a.css",
-    "main.js": "/pf-car-rental/static/js/main.92af0b1f.js",
+    "main.js": "/pf-car-rental/static/js/main.3f82c1b0.js",
     "static/js/131.96d79e88.chunk.js": "/pf-car-rental/static/js/131.96d79e88.chunk.js",
-    "static/js/821.3fdc535d.chunk.js": "/pf-car-rental/static/js/821.3fdc535d.chunk.js",
-    "static/js/416.4b045e6c.chunk.js": "/pf-car-rental/static/js/416.4b045e6c.chunk.js",
+    "static/js/557.f5d53385.chunk.js": "/pf-car-rental/static/js/557.f5d53385.chunk.js",
+    "static/js/416.ed87dcb7.chunk.js": "/pf-car-rental/static/js/416.ed87dcb7.chunk.js",
     "static/js/520.cafb02e9.chunk.js": "/pf-car-rental/static/js/520.cafb02e9.chunk.js",
     "static/js/426.801850f4.chunk.js": "/pf-car-rental/static/js/426.801850f4.chunk.js",
+    "static/js/330.3f7bf9e6.chunk.js": "/pf-car-rental/static/js/330.3f7bf9e6.chunk.js",
     "static/media/volvo1.jpg": "/pf-car-rental/static/media/volvo1.ec57415f16f4b4d27c35.jpg",
     "static/media/lincoln1.jpg": "/pf-car-rental/static/media/lincoln1.44807d130e5261dfaa8e.jpg",
     "static/media/infinity1.jpg": "/pf-car-rental/static/media/infinity1.164f30e12dc653b56582.jpg",
@@ -16,15 +17,16 @@
     "static/media/car-rental.png": "/pf-car-rental/static/media/car-rental.49220822fe2b56e08d40.png",
     "index.html": "/pf-car-rental/index.html",
     "main.17fb153a.css.map": "/pf-car-rental/static/css/main.17fb153a.css.map",
-    "main.92af0b1f.js.map": "/pf-car-rental/static/js/main.92af0b1f.js.map",
+    "main.3f82c1b0.js.map": "/pf-car-rental/static/js/main.3f82c1b0.js.map",
     "131.96d79e88.chunk.js.map": "/pf-car-rental/static/js/131.96d79e88.chunk.js.map",
-    "821.3fdc535d.chunk.js.map": "/pf-car-rental/static/js/821.3fdc535d.chunk.js.map",
-    "416.4b045e6c.chunk.js.map": "/pf-car-rental/static/js/416.4b045e6c.chunk.js.map",
+    "557.f5d53385.chunk.js.map": "/pf-car-rental/static/js/557.f5d53385.chunk.js.map",
+    "416.ed87dcb7.chunk.js.map": "/pf-car-rental/static/js/416.ed87dcb7.chunk.js.map",
     "520.cafb02e9.chunk.js.map": "/pf-car-rental/static/js/520.cafb02e9.chunk.js.map",
-    "426.801850f4.chunk.js.map": "/pf-car-rental/static/js/426.801850f4.chunk.js.map"
+    "426.801850f4.chunk.js.map": "/pf-car-rental/static/js/426.801850f4.chunk.js.map",
+    "330.3f7bf9e6.chunk.js.map": "/pf-car-rental/static/js/330.3f7bf9e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17fb153a.css",
-    "static/js/main.92af0b1f.js"
+    "static/js/main.3f82c1b0.js"
   ]
 }
