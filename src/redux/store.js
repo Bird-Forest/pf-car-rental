@@ -14,14 +14,14 @@ import {
 } from 'redux-persist';
 
 const carsPersistConfig = {
-  key: 'cars',
+  key: 'filter',
   storage,
-  whitelist: [],
+  whitelist: ['brand', 'price'],
 };
 
 const rootReducer = combineReducers({
-  cars: persistReducer(carsPersistConfig, catalogReducer),
-  filter: filterReducer,
+  cars: catalogReducer,
+  filter: persistReducer(carsPersistConfig, filterReducer),
 });
 
 export const store = configureStore({

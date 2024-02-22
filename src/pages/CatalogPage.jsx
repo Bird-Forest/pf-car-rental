@@ -1,13 +1,14 @@
+import React from 'react';
 import ListCars from '../components/ListCars';
 
-// import FilterCars from '../components/FilterCars';
 import { WrapFilterCatalog, WrapOutlet } from './Pages.styled';
+import FilterOfCars from '../components/FilterOfCars';
 
 export default function CatalogPage() {
   return (
     <WrapOutlet>
       <WrapFilterCatalog>
-        {/* <FilterCars /> */}
+        <FilterOfCars />
         <ListCars />
       </WrapFilterCatalog>
     </WrapOutlet>

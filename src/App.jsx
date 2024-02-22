@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import React, { Suspense, useEffect, useMemo } from 'react';
 import { selectStatus } from './redux/selectors';
 import { Container } from './pages/Pages.styled';
-import { fetchCatalog } from './redux/server';
+import { fetchCarsForFilter, fetchCatalog } from './redux/server';
 import AppBar from './pages/AppBar';
 import CustomRoutes from './pages/CustomRoutes';
 import { Loading } from './helper/Loading';
@@ -15,6 +15,7 @@ export default function App() {
   useEffect(() => {
     if (status === 'idle') {
       dispatch(getCatalog);
+      dispatch(fetchCarsForFilter());
     }
     return () => {};
   }, [status, dispatch, getCatalog]);

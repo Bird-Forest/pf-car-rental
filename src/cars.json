@@ -83,7 +83,7 @@
   {
     "id": "9004",
     "year": 2006,
-    "make": "HUMMER",
+    "make": "Hummer",
     "model": "H2",
     "type": "SUV",
     "img": "https://ftp.goit.study/img/cars-test-task/hummer_h2.jpeg",
@@ -218,8 +218,8 @@
   {
     "id": "9009",
     "year": 2000,
-    "make": "GMC",
-    "model": "Yukon Denali",
+    "make": "Hummer",
+    "model": "GMC",
     "type": "SUV",
     "img": "https://ftp.goit.study/img/cars-test-task/gmc_yukon_denali.jpeg",
     "description": "The GMC Yukon Denali is a full-size luxury SUV that offers a powerful engine, a comfortable and spacious interior, and a host of advanced features.",
@@ -866,7 +866,7 @@
   {
     "id": "9033",
     "year": 2022,
-    "make": "Lamboghni",
+    "make": "Lamborghni",
     "model": "Diablo",
     "type": "Sport",
     "img": "https://st.depositphotos.com/2439851/59341/i/600/depositphotos_593417270-stock-photo-poltu-quatu-italy-jul-2022.jpg",
@@ -945,7 +945,7 @@
     "completed": false
   },
   {
-    "id": "9004",
+    "id": "9036",
     "year": 2006,
     "make": "HUMMER",
     "model": "GMC",

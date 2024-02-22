@@ -14,6 +14,12 @@ export const selectPage = state => state.cars.page;
 
 export const selectFilter = state => state.filter.filterCars;
 
+// export const selectCars = state => state.filter.cars;
+
+export const selectBrand = state => state.filter.brand;
+
+export const selectPrice = state => state.filter.price;
+
 export const selectVisibleCars = createSelector(
   [selectCatalog, selectFilter],
   (catalog, filter) => {
