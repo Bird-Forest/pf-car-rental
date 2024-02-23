@@ -37,3 +37,4 @@ export const WrapImgEmpty = styled.div`
   padding: 0;
   margin: 0;
 `;
+// ******* Logo ********

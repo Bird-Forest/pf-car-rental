@@ -9,11 +9,15 @@ export const Container = styled.div`
   height: 100%;
 `;
 export const WrapAppBar = styled.div`
+  position: fixed;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 8vh;
   width: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgb(255, 255, 255, 0.5);
   margin: 0;
 `;
 export const WrapNavigator = styled.div`
@@ -44,7 +48,7 @@ export const WrapOutlet = styled.div`
   align-items: flex-start;
   width: 100%;
   height: 92vh;
-  margin: 0;
+  margin: 70px 0 0 0;
 `;
 export const WrapFilterCatalog = styled.div`
   display: flex;

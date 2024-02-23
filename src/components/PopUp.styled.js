@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Backdrop = styled.div`
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   display: flex;
   justify-content: center;

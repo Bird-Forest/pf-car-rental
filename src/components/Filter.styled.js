@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const FilterBar = styled.div`
-  top: 150px;
-  left: 0;
   z-index: 1;
   display: flex;
   justify-content: space-between;

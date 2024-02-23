@@ -8,7 +8,7 @@ export const fetchCatalog = createAsyncThunk(
   async (page, thunkAPI) => {
     try {
       const response = await axios.get(`/cars?page=${page}&limit=8`);
-      console.log(response.data);
+      // console.log(response.data);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -20,7 +20,7 @@ export const fetchCarsForFilter = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const response = await axios.get(`/cars`);
-      console.log(response.data);
+      // console.log(response.data);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
