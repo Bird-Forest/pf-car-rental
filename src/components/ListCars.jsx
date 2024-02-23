@@ -20,6 +20,8 @@ export default function ListCars() {
   const catalog = useSelector(selectCatalog);
   // const error = useSelector(selectError);
 
+  // const filterCars = useSelector(selectVisibleCars);
+
   const page = useSelector(selectPage);
   const totalCards = 36;
   let perPage = 8;

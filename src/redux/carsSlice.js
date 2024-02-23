@@ -31,26 +31,6 @@ const carsSlice = createSlice({
     addPage(state) {
       state.page = state.page + 1;
     },
-    // addFavorite(state, action) {
-    //   // state.selectedCars = action.payload;
-    //   state.selectedCars = [...state.selectedCars, action.payload];
-    //   // state.selectedCars = state.selectedCars.push(action.payload);
-    // },
-    // deleteFavorite(state, action) {
-    //   state.selectedCars = state.selectedCars.filter(
-    //     item => item.id !== action.payload
-    //   );
-    // },
-    // addFavorite(state, action) {
-    //   // state.selectedCars = action.payload;
-    //   state.selectedCars = [...state.selectedCars, action.payload];
-    //   // state.selectedCars = state.selectedCars.push(action.payload);
-    // },
-    // deleteFavorite(state, action) {
-    //   state.selectedCars = state.selectedCars.filter(
-    //     item => item.id !== action.payload
-    //   );
-    // },
   },
 
   extraReducers: builder => {

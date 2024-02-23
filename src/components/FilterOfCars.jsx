@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectBrand, selectFilter, selectPrice } from '../redux/selectors';
+import {
+  selectBrand,
+  selectCatalog,
+  selectFilter,
+  selectPrice,
+  selectVisibleCars,
+} from '../redux/selectors';
 import {
   BtnArrow,
   BtnFilter,
@@ -17,13 +23,14 @@ import {
   WrapSelectBrand,
   WrapSelectPrice,
 } from './Filter.styled';
-import { getFilterCars, setBrand, setPrice } from '../redux/filterSlice';
+import { setBrand, setPrice } from '../redux/filterSlice';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function FilterOfCars() {
   const [isBrend, setIsBrend] = useState(true);
   const [isPrice, setIsPrice] = useState(true);
   const filter = useSelector(selectFilter);
+  const catalog = useSelector(selectCatalog);
   const brand = useSelector(selectBrand);
   const price = useSelector(selectPrice);
 
@@ -31,7 +38,10 @@ export default function FilterOfCars() {
 
   const getFilter = () => {
     // console.log(filter);
-    dispatch(getFilterCars(filter));
+    // dispatch(getFilterCars(filter));
+    selectVisibleCars(catalog, filter);
+    console.log(catalog);
+    console.log(filter);
   };
   const resetFilter = () => {
     dispatch(setBrand(null));

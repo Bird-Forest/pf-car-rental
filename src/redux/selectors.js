@@ -1,4 +1,4 @@
-import { createSelector } from '@reduxjs/toolkit';
+// import { createSelector } from '@reduxjs/toolkit';
 
 export const selectLoading = state => state.cars.loading;
 
@@ -14,21 +14,29 @@ export const selectPage = state => state.cars.page;
 
 export const selectFilter = state => state.filter.filterCars;
 
-// export const selectCars = state => state.filter.cars;
-
 export const selectBrand = state => state.filter.brand;
 
 export const selectPrice = state => state.filter.price;
 
-export const selectVisibleCars = createSelector(
-  [selectCatalog, selectFilter],
-  (catalog, filter) => {
-    if (filter.brand !== null) {
-      catalog = catalog.filter(item => item.make.includes(filter.brand));
-    }
-    if (filter.price !== null) {
-      catalog = catalog.filter(item => item.rentalPrice <= filter.price);
-    }
-    return catalog;
+export const selectVisibleCars = (catalog, filter) => {
+  if (filter.brand !== null) {
+    catalog = catalog.filter(item => item.make.includes(filter.brand));
   }
-);
+  if (filter.price !== null) {
+    catalog = catalog.filter(item => item.rentalPrice <= filter.price);
+  }
+  return catalog;
+};
+
+// export const selectVisibleCars = createSelector(
+//   [selectCatalog, selectFilter],
+//   (catalog, filter) => {
+//     if (filter.brand !== null) {
+//       catalog = catalog.filter(item => item.make.includes(filter.brand));
+//     }
+//     if (filter.price !== null) {
+//       catalog = catalog.filter(item => item.rentalPrice <= filter.price);
+//     }
+//     return catalog;
+//   }
+// );
