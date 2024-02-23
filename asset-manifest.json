@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/pf-car-rental/static/css/main.17fb153a.css",
-    "main.js": "/pf-car-rental/static/js/main.a030fcac.js",
+    "main.js": "/pf-car-rental/static/js/main.9d0ac76b.js",
     "static/js/131.96d79e88.chunk.js": "/pf-car-rental/static/js/131.96d79e88.chunk.js",
-    "static/js/557.a02f4dc4.chunk.js": "/pf-car-rental/static/js/557.a02f4dc4.chunk.js",
-    "static/js/416.9464f464.chunk.js": "/pf-car-rental/static/js/416.9464f464.chunk.js",
+    "static/js/557.ee9fa452.chunk.js": "/pf-car-rental/static/js/557.ee9fa452.chunk.js",
+    "static/js/416.fe68da06.chunk.js": "/pf-car-rental/static/js/416.fe68da06.chunk.js",
     "static/js/520.cafb02e9.chunk.js": "/pf-car-rental/static/js/520.cafb02e9.chunk.js",
     "static/js/426.801850f4.chunk.js": "/pf-car-rental/static/js/426.801850f4.chunk.js",
     "static/js/330.3f7bf9e6.chunk.js": "/pf-car-rental/static/js/330.3f7bf9e6.chunk.js",
@@ -17,16 +17,16 @@
     "static/media/car-rental.png": "/pf-car-rental/static/media/car-rental.49220822fe2b56e08d40.png",
     "index.html": "/pf-car-rental/index.html",
     "main.17fb153a.css.map": "/pf-car-rental/static/css/main.17fb153a.css.map",
-    "main.a030fcac.js.map": "/pf-car-rental/static/js/main.a030fcac.js.map",
+    "main.9d0ac76b.js.map": "/pf-car-rental/static/js/main.9d0ac76b.js.map",
     "131.96d79e88.chunk.js.map": "/pf-car-rental/static/js/131.96d79e88.chunk.js.map",
-    "557.a02f4dc4.chunk.js.map": "/pf-car-rental/static/js/557.a02f4dc4.chunk.js.map",
-    "416.9464f464.chunk.js.map": "/pf-car-rental/static/js/416.9464f464.chunk.js.map",
+    "557.ee9fa452.chunk.js.map": "/pf-car-rental/static/js/557.ee9fa452.chunk.js.map",
+    "416.fe68da06.chunk.js.map": "/pf-car-rental/static/js/416.fe68da06.chunk.js.map",
     "520.cafb02e9.chunk.js.map": "/pf-car-rental/static/js/520.cafb02e9.chunk.js.map",
     "426.801850f4.chunk.js.map": "/pf-car-rental/static/js/426.801850f4.chunk.js.map",
     "330.3f7bf9e6.chunk.js.map": "/pf-car-rental/static/js/330.3f7bf9e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17fb153a.css",
-    "static/js/main.a030fcac.js"
+    "static/js/main.9d0ac76b.js"
   ]
 }
