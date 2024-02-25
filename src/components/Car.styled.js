@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-// export const WrapCars = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   max-width: 1184px;
-//   padding: 0;
-//   margin: 20px auto;
-// `;
 export const WrapListCars = styled.ul`
   display: flex;
   width: 1184px;

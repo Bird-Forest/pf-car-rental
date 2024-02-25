@@ -45,7 +45,7 @@ export const WrapContagent = styled.div`
   align-items: space-between;
   gap: 160px;
   padding: 8px;
-  margin: 0;
+  margin: 0 0 20px 0;
 `;
 export const InfoContrag = styled.div`
   display: flex;
