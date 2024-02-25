@@ -8,7 +8,7 @@ export const FilterBar = styled.div`
   width: 600px;
   height: 74px;
   padding: 0;
-  margin: 0 auto;
+  margin: 20px auto;
 `;
 export const FilterForm = styled.div`
   display: flex;

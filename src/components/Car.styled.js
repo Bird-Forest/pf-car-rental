@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-export const WrapCars = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1184px;
-  padding: 0;
-  margin: 50px auto;
-`;
+// export const WrapCars = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   max-width: 1184px;
+//   padding: 0;
+//   margin: 20px auto;
+// `;
 export const WrapListCars = styled.ul`
   display: flex;
   width: 1184px;
@@ -17,6 +17,7 @@ export const WrapListCars = styled.ul`
   flex-wrap: wrap;
   row-gap: 50px;
   column-gap: 29px;
+  margin: 20px auto;
 `;
 export const BtnHeart = styled.button`
   position: absolute;
@@ -157,7 +158,7 @@ export const BtnMore = styled.button`
   line-height: 1.5;
   text-align: center;
   padding: 0;
-  margin: 50px auto 0 auto;
+  margin: 0 auto 20px auto;
   &:disabled {
     border: 1px solid rgb(18, 20, 23);
     color: rgb(18, 20, 23);

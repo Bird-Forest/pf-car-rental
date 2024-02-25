@@ -20,7 +20,7 @@ export const WrapServIcon = styled.div`
   height: 68px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px auto;
   .icon-wrap {
     display: flex;
     flex-direction: column;
