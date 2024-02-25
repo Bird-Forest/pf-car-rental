@@ -23,9 +23,8 @@ export default function ListCars() {
   let perPage = 8;
   let totalPage = Math.ceil(totalCards / perPage);
   const filterCars = useSelector(selectVisibleCars);
-
-  const isBtnMore =
-    filterCars.length === 0 || filterCars.length - 1 === totalCards;
+  console.log(filterCars);
+  const isBtnMore = filterCars.length === 0 || filterCars.length === totalCards;
 
   const nextPage = () => {
     dispatch(addPage(page));
