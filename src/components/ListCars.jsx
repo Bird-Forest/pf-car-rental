@@ -12,7 +12,7 @@ import { nanoid } from '@reduxjs/toolkit';
 import { BtnMore, WrapCars, WrapListCars } from './Car.styled';
 import { Loading } from '../helper/Loading';
 import { addPage } from '../redux/carsSlice';
-import ErrorMessage from '../helper/ErrorMessage';
+import EmptyPage from '../helper/EmptyPage';
 
 export default function ListCars() {
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ export default function ListCars() {
             return <CarCard key={nanoid()} item={item} />;
           })
         ) : (
-          <ErrorMessage message={'Nothing was found for this request'} />
+          <EmptyPage />
         )}
       </WrapListCars>
       <BtnMore
@@ -55,3 +55,4 @@ export default function ListCars() {
     </WrapCars>
   );
 }
+// message={'Nothing was found for this request'

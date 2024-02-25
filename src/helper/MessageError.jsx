@@ -1,7 +1,7 @@
 import React from 'react';
-import { ErrorImg, ErrorText, WrapError } from './Error.styled';
+import { ErrorImg, ErrorText, WrapError } from './Message.styled';
 
-export default function ErrorMessage({ message }) {
+export default function MessageError({ message }) {
   return (
     <WrapError>
       <ErrorImg />
