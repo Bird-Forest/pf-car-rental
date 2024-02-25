@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/pf-car-rental/static/css/main.17fb153a.css",
-    "main.js": "/pf-car-rental/static/js/main.604190a5.js",
-    "static/js/131.21422c70.chunk.js": "/pf-car-rental/static/js/131.21422c70.chunk.js",
-    "static/js/888.26647b1f.chunk.js": "/pf-car-rental/static/js/888.26647b1f.chunk.js",
-    "static/js/416.e2917018.chunk.js": "/pf-car-rental/static/js/416.e2917018.chunk.js",
+    "main.js": "/pf-car-rental/static/js/main.15b116bc.js",
+    "static/js/131.231fdd55.chunk.js": "/pf-car-rental/static/js/131.231fdd55.chunk.js",
+    "static/js/888.d2ce23cc.chunk.js": "/pf-car-rental/static/js/888.d2ce23cc.chunk.js",
+    "static/js/416.9b4086e0.chunk.js": "/pf-car-rental/static/js/416.9b4086e0.chunk.js",
     "static/js/520.cafb02e9.chunk.js": "/pf-car-rental/static/js/520.cafb02e9.chunk.js",
     "static/js/426.801850f4.chunk.js": "/pf-car-rental/static/js/426.801850f4.chunk.js",
     "static/js/79.0d95caae.chunk.js": "/pf-car-rental/static/js/79.0d95caae.chunk.js",
@@ -18,10 +18,10 @@
     "static/media/car-rental.png": "/pf-car-rental/static/media/car-rental.49220822fe2b56e08d40.png",
     "index.html": "/pf-car-rental/index.html",
     "main.17fb153a.css.map": "/pf-car-rental/static/css/main.17fb153a.css.map",
-    "main.604190a5.js.map": "/pf-car-rental/static/js/main.604190a5.js.map",
-    "131.21422c70.chunk.js.map": "/pf-car-rental/static/js/131.21422c70.chunk.js.map",
-    "888.26647b1f.chunk.js.map": "/pf-car-rental/static/js/888.26647b1f.chunk.js.map",
-    "416.e2917018.chunk.js.map": "/pf-car-rental/static/js/416.e2917018.chunk.js.map",
+    "main.15b116bc.js.map": "/pf-car-rental/static/js/main.15b116bc.js.map",
+    "131.231fdd55.chunk.js.map": "/pf-car-rental/static/js/131.231fdd55.chunk.js.map",
+    "888.d2ce23cc.chunk.js.map": "/pf-car-rental/static/js/888.d2ce23cc.chunk.js.map",
+    "416.9b4086e0.chunk.js.map": "/pf-car-rental/static/js/416.9b4086e0.chunk.js.map",
     "520.cafb02e9.chunk.js.map": "/pf-car-rental/static/js/520.cafb02e9.chunk.js.map",
     "426.801850f4.chunk.js.map": "/pf-car-rental/static/js/426.801850f4.chunk.js.map",
     "79.0d95caae.chunk.js.map": "/pf-car-rental/static/js/79.0d95caae.chunk.js.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.17fb153a.css",
-    "static/js/main.604190a5.js"
+    "static/js/main.15b116bc.js"
   ]
 }
