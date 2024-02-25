@@ -13,15 +13,20 @@ import {
   REGISTER,
 } from 'redux-persist';
 
-const carsPersistConfig = {
+const filterPersistConfig = {
   key: 'filter',
   storage,
   whitelist: ['brand', 'price'],
 };
+const carsPersistConfig = {
+  key: 'cars',
+  storage,
+  whitelist: ['selectedCars'],
+};
 
 const rootReducer = combineReducers({
-  cars: catalogReducer,
-  filter: persistReducer(carsPersistConfig, filterReducer),
+  cars: persistReducer(carsPersistConfig, catalogReducer),
+  filter: persistReducer(filterPersistConfig, filterReducer),
 });
 
 export const store = configureStore({

@@ -3,7 +3,6 @@ import React from 'react';
 import { fetchCatalog } from '../redux/server';
 import { useDispatch } from 'react-redux';
 import {
-  // selectError,
   selectLoading,
   selectPage,
   selectVisibleCars,
@@ -18,14 +17,15 @@ import ErrorMessage from '../helper/ErrorMessage';
 export default function ListCars() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectLoading);
-  // const error = useSelector(selectError);
+
   const page = useSelector(selectPage);
   const totalCards = 36;
   let perPage = 8;
   let totalPage = Math.ceil(totalCards / perPage);
   const filterCars = useSelector(selectVisibleCars);
 
-  const isBtnMore = filterCars.length === 0 || filterCars.length === totalCards;
+  const isBtnMore =
+    filterCars.length === 0 || filterCars.length - 1 === totalCards;
 
   const nextPage = () => {
     dispatch(addPage(page));
