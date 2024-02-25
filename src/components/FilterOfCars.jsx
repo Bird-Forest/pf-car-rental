@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  selectBrand,
-  selectCatalog,
-  selectFilter,
-  selectPrice,
-  selectVisibleCars,
-} from '../redux/selectors';
+import { selectBrand, selectFilter, selectPrice } from '../redux/selectors';
 import {
   BtnArrow,
   BtnFilter,
@@ -30,26 +24,15 @@ export default function FilterOfCars() {
   const [isBrend, setIsBrend] = useState(true);
   const [isPrice, setIsPrice] = useState(true);
   const filter = useSelector(selectFilter);
-  const catalog = useSelector(selectCatalog);
   const brand = useSelector(selectBrand);
   const price = useSelector(selectPrice);
 
   const dispatch = useDispatch();
 
-  const getFilter = () => {
-    // console.log(filter);
-    // dispatch(getFilterCars(filter));
-    selectVisibleCars(catalog, filter);
-    console.log(catalog);
-    console.log(filter);
-  };
   const resetFilter = () => {
     dispatch(setBrand(null));
     dispatch(setPrice(null));
   };
-  // console.log(brand);
-  // console.log(price);
-  // console.log(filter);
 
   return (
     <FilterBar>
@@ -61,7 +44,6 @@ export default function FilterOfCars() {
               id="brand"
               name="brand"
               value={filter.brand || 'Enter the text'}
-              // placeholder="Enter the text"
               readOnly={brand}
             />
             <BtnArrow onClick={() => setIsBrend(!isBrend)}>
@@ -97,10 +79,10 @@ export default function FilterOfCars() {
               <SelectPrice
                 id="price"
                 name="price"
-                value={filter.price || '$'}
-                // placeholder="$"
+                value={filter.price || ''}
                 readOnly={price}
               />
+              <span className="text">$</span>
             </WrapPrice>
             <BtnArrow onClick={() => setIsPrice(!isPrice)}>
               {isPrice ? (
@@ -128,67 +110,9 @@ export default function FilterOfCars() {
           </WrapSelectPrice>
         </WrapFilter>
       </FilterForm>
-      <BtnFilter type="button" onClick={getFilter}>
-        Search
-      </BtnFilter>
       <BtnFilter type="button" onClick={resetFilter}>
-        Reset
+        <span className="text">Reset</span>
       </BtnFilter>
     </FilterBar>
   );
 }
-
-// import React from 'react';
-// import { Formik, Form, Field, FieldArray } from 'formik';
-// import { selectCatalog } from '../redux/selectors';
-// import { useSelector } from 'react-redux';
-// import { FilterBar, WrapSelect } from './Filter.styled';
-
-// function getCategoriesString(items, itemName) {
-//   if (!items) return [];
-//   return items.reduce((acc, item) => {
-//     if (!acc.includes(item[itemName])) acc.push(item[itemName]);
-//     return acc.sort((a, b) => a.localeCompare(b));
-//   }, []);
-// }
-
-// export default function SelectReact() {
-//   const catalog = useSelector(selectCatalog);
-//   const selectBrand = getCategoriesString(catalog, 'make');
-//   console.log(selectBrand);
-//   const handleSelected = event => {
-//     let value = event;
-//     console.log(value);
-//     // const brand = values.brand;
-//     // console.log(brand);
-//   };
-//   return (
-//     <Formik onSubmit={handleSelected}>
-//       <Form>
-//         <Field name="brand" value={'Hello'} />
-//         <button type="button">chooce</button>
-//         <FieldArray
-//           name="brand"
-//           render={arrayHelpers => (
-//             <FilterBar>
-//               {selectBrand.map((item, index) => (
-//                 <WrapSelect key={index}>
-//                   <span
-//                     id={index}
-//                     className="text"
-//                     name={selectBrand[index]}
-//                     onClick={e => console.log(selectBrand[index])}
-//                     // onClick={() => arrayHelpers.insert(index)}
-//                   >
-//                     {selectBrand[index]}
-//                   </span>
-//                 </WrapSelect>
-//               ))}
-//             </FilterBar>
-//           )}
-//         />
-//         <batton>Submit</batton>
-//       </Form>
-//     </Formik>
-//   );
-// }

@@ -25,8 +25,8 @@ export const BtnHeart = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
   background-color: transparent;
   border: none;
   color: rgb(52, 112, 255);
@@ -34,15 +34,15 @@ export const BtnHeart = styled.button`
   margin: 0;
   padding: 0;
   .icon-heart {
-    width: 18px;
-    height: 18px;
-    fill: rgba(255, 255, 255, 0.9);
-    /* fill: rgb(52, 112, 255); */
+    width: 19px;
+    height: 19px;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 1px;
   }
   .icon-heart-fill {
     width: 20px;
     height: 20px;
-    fill: rgb(52, 112, 255);
+    stroke: rgb(52, 112, 255);
   }
 `;
 export const WrapCarCard = styled.li`

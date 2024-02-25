@@ -17,9 +17,7 @@ import CarPopUp from './CarPopUp';
 
 export default function CarCard({ item }) {
   const [showModal, setShowModal] = useState(false);
-  // const catalog = useSelector(selectCatalog);
-  // const favorites = useSelector(selectFavorites);
-  // console.log(favorites);
+
   const dispatch = useDispatch();
 
   const openModal = () => {
@@ -28,7 +26,6 @@ export default function CarCard({ item }) {
 
   const handleLikes = evt => {
     let idCar = evt.currentTarget.id;
-    // let newItem = catalog.find(item => item.id === idCar);
     if (!item.completed) {
       console.log(item.completed);
 

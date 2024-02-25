@@ -86,4 +86,4 @@ const carsSlice = createSlice({
 });
 
 export const catalogReducer = carsSlice.reducer;
-export const { addPage } = carsSlice.actions;
+export const { addPage, getFilterCars } = carsSlice.actions;

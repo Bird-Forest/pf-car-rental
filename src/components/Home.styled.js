@@ -14,11 +14,36 @@ export const WrapHome = styled.div`
   align-items: center;
   gap: 8px;
 `;
+export const WrapServIcon = styled.div`
+  display: flex;
+  width: 800px;
+  height: 68px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  .icon-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 172px;
+    gap: 4px;
+  }
+  .icon-serv {
+    width: 50px;
+    height: 50px;
+    fill: rgb(52, 112, 255);
+  }
+  .icon-serv:hover,
+  .icon-serv:focus {
+    fill: rgb(11, 68, 205);
+  }
+`;
 export const WrapContagent = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 240px;
+  align-items: space-between;
+  gap: 160px;
   padding: 8px;
   margin: 0;
 `;
@@ -27,10 +52,11 @@ export const InfoContrag = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 370px;
   .info-title {
     font-family: 'Manrope';
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 1.3;
     text-align: left;
     color: rgb(52, 112, 255);

@@ -5,7 +5,7 @@ export const FilterBar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 859px;
+  width: 600px;
   height: 74px;
   padding: 0;
   margin: 0 auto;
@@ -14,7 +14,7 @@ export const FilterForm = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 `;
@@ -125,17 +125,10 @@ export const OptionForm = styled.li`
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
-
-  // display: flex;
-  // font-size: 14px;
-  // outline: transparent;
-  // border: 1px solid rgba(18, 20, 23, 0.05);
-  // border-radius: 14px;
-  // box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.02);
-  // background-color: rgb(255, 255, 255);
-  // padding: 18px;
-  // color: rgba(18, 20, 23, 0.2);
-  // margin: 0;
+  cursor: pointer;
+  &:hover {
+    color: rgb(18, 20, 23);
+  }
 `;
 export const WrapSelectPrice = styled.div`
   position: relative;
@@ -146,15 +139,15 @@ export const WrapSelectPrice = styled.div`
   gap: 8px;
   border-radius: 14px;
   background: rgb(247, 247, 251);
-  padding: 12px 18px;
+  padding: 13px 18px;
 `;
 export const WrapPrice = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   padding: 0;
-  .text-span {
+  .text {
     width: 8px;
     font-family: 'Manrope';
     font-size: 16px;
@@ -163,14 +156,14 @@ export const WrapPrice = styled.div`
     text-align: left;
     color: rgb(18, 20, 23);
     padding: 0;
-    margin: 0;
+    margin: 0 28px 0 0;
   }
 `;
 export const SelectPrice = styled.input`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 85px;
+  width: 28px;
   height: 20px;
   outline: rgb(247, 247, 251);
   border: none;
@@ -228,15 +221,20 @@ export const BtnFilter = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 36px;
-  color: rgb(255, 255, 255);
-  font-family: ' Manrope';
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.42;
+  padding: 8px 32px;
   border-radius: 12px;
   background-color: rgb(52, 112, 255);
   cursor: pointer;
+  .text {
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.11;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+  }
   &:hover,
   :focus {
     background: rgb(11, 68, 205);

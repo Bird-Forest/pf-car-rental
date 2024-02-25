@@ -1,10 +1,11 @@
 import React from 'react';
-import { FaCloudBolt } from 'react-icons/fa6';
+import { ErrorImg, ErrorText, WrapError } from './Error.styled';
 
-export default function errorMessage() {
+export default function ErrorMessage({ message }) {
   return (
-    <div>
-      <FaCloudBolt />
-    </div>
+    <WrapError>
+      <ErrorImg />
+      <ErrorText>{message}</ErrorText>
+    </WrapError>
   );
 }

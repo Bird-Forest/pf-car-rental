@@ -35,9 +35,6 @@ const filterSlice = createSlice({
     setPrice(state, action) {
       state.filterCars.price = action.payload;
     },
-    getFilterCars(state, action) {
-      state.filterCars = action.payload;
-    },
   },
   extraReducers: builder => {
     builder.addCase(fetchCarsForFilter.fulfilled, (state, action) => {
@@ -48,5 +45,5 @@ const filterSlice = createSlice({
   },
 });
 
-export const { setBrand, setPrice, getFilterCars } = filterSlice.actions;
+export const { setBrand, setPrice } = filterSlice.actions;
 export const filterReducer = filterSlice.reducer;

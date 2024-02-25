@@ -9,11 +9,29 @@ import {
   InfoContrag,
   WrapContagent,
   WrapHome,
+  WrapServIcon,
 } from './Home.styled';
+import { Ri24HoursFill } from 'react-icons/ri';
+import { FaCarAlt } from 'react-icons/fa';
+import { MdOutlinePendingActions } from 'react-icons/md';
 
 export default function Home() {
   return (
     <WrapHome>
+      <WrapServIcon>
+        <div className="icon-wrap">
+          <Ri24HoursFill className="icon-serv" />
+          <p>24/7 service</p>
+        </div>
+        <div className="icon-wrap">
+          <FaCarAlt className="icon-serv" />
+          <p>Delivery to any address</p>
+        </div>
+        <div className="icon-wrap">
+          <MdOutlinePendingActions className="icon-serv" />
+          <p>Fast paperwork</p>
+        </div>
+      </WrapServIcon>
       <WrapContagent>
         <InfoContrag>
           <h4 className="info-title">Luxury Car Rentals</h4>
